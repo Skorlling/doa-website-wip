@@ -1,0 +1,276 @@
+/*CSS Reset*/
+body, header, nav, ul, main, footer, h1, div, img, section, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* Mobile Viewport */
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 1.5em;
+    padding: 5%;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: gold;
+}
+
+header img {
+    max-width: 7%;
+    height: auto;
+    display: none;
+}
+
+header img:hover {
+    filter: sepia(100%) saturate(400%);
+}
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: brown;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.75em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+}
+
+section {
+    padding: 1%;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article p {
+    text-align: center;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    height: auto;
+}
+
+aside {
+    text-align: center;
+}
+
+.perma-2-column-grid img {
+    min-width: 20%;
+    max-width: 25%;
+    height: auto;
+    padding: 5%;
+    display: inline-block;
+}
+
+form {
+    margin-top: 2%;
+    padding: 2%;
+}
+
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    font-size: 1em;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    clear: left;
+    text-align: center;
+}
+
+footer p {
+    color: #555555;
+    text-align: left;
+    padding: 2%;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer_links a {
+    font-weight: bold;
+    color: black;
+}
+
+.footer_links a:hover {
+    color: gold;
+}
+
+footer img {
+    width: 3%;
+    padding: 1%;
+}
+
+footer img:hover {
+    filter: sepia(100%) saturate(400%) brightness(400%);
+}
+
+.footer_socials {
+    padding: 2%;
+}
+
+.vertical_line {
+    border-top: thin solid #555555;
+}
+
+
+/* Tablet Viewport */
+@media screen and (min-width: 768px) {
+
+    nav li {
+        display: inline-block;
+    }
+
+    main {
+        padding: 2.5%;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .gallery {
+        width: 50%; float: left;
+    }
+
+    .perma-2-column-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Desktop Viewport */
+@media screen and (min-width: 992px) {
+    header {
+        text-align: left;
+    }
+
+    header h1 {
+        padding: 0%;
+    }
+
+    header img {
+        display: inline-block;
+    }
+    
+    nav {
+        width: 150px;
+        height: 100%;
+        float: left;
+    }
+    
+    nav ul {
+        margin: 0;
+        text-align: left;
+    }
+    
+    main {
+        margin-left: 225px;
+        padding: 0%;
+    }
+
+    aside {
+        grid-column: 1 / span 3;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .gallery {
+        width: 30%;
+        float: left;
+    }
+
+    form {
+        width: 40%;
+        margin: 0;
+    }
+
+    form #submit {
+        margin: 0 0 0 75%;
+        padding: 2%;
+        font-size: 1em;
+    }
+    
+    footer {
+        margin-left: 225px;
+        padding: 5%;
+    }
+}

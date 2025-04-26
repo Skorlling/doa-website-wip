@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Created By: William Angus-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <title>Notice</title>
+    <style>
+        @-webkit-keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.03);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.03);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .notice {
+            background-color: white;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+            border: 10px solid brown;
+        }
+
+        img {
+            max-width: 30%;
+            min-width: 25%;
+        }
+
+        button {
+            background:none;
+            border:none;
+            font-size: 150%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+        }
+
+        #homeTextChanged {
+            display: none;
+        }
+
+        a {
+            background-color: brown;
+            padding: 2%;
+            border: 3px solid rgb(80, 24, 24);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 200%;
+        }
+
+        a:hover {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notice">
+    <img src="images/rotating_doa.gif" alt="Seal of the Department of Otherworldly Affairs">
+
+    <button onclick="changeHomeText()" id="homeText">You are now entering the official site for the <i>United States<br>
+        Department of Otherworldly Affairs.</i><br><br><br>
+        Please continue to the main site below:<br><br></button>
+
+    <button onclick="revertHomeText()" id="homeTextChanged">You are now entering a <i>creative worldbuilding project,</i> not<br>
+        an official government website.<br><br><br>
+        Please enjoy the main site below:<br><br></button>
+
+    <p>&nbsp;</p> <!-- To Keep the Enter Button from Appearing Too High -->
+
+    <a href="home.html"> ENTER </a>
+
+    <p>&nbsp;</p> <!-- To Keep the Enter Button from Appearing Too Low -->
+
+    <script src=scripts/script.js></script>
+</body>
+
+</html>

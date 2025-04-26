@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Created By: William Angus-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="home.html">U.S. Department of Otherworldly Affairs</a></h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a>&nbsp;</li>
+            <li><a href="about.html">About</a>&nbsp;</li>
+            <li><a href="organization.html">Organization</a>&nbsp;</li>
+            <li><a href="history.html">History</a>&nbsp;</li>
+            <li><a href="newsroom.html">Newsroom</a>&nbsp;</li>
+            <li><a href="library.html">Library</a>&nbsp;</li>
+            <li><a href="contact.html">>Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Use this to write the main content of the webpage. -->
+    <main>
+        <h2>Contact</h2>
+        <p>To contact an office or agency of the Department of Otherworldly Affairs digitally, please use the attached form.</p>
+
+        <form action=“mailto:wryanangus@gmail.com” method="post">
+        
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type=email name="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Recipient</legend>
+                <label for=recipient>Select Recipient:</label>
+                <select name="recipient" id="recipient">
+                    <option value="ad">Office of the Secretary</option>
+                    <option value="ad">Exclusion Zone Authority</option>
+                    <option value="ad">Metspace Territory Commission</option>
+                    <option value="ad">Bureau of Occult Enforcement</option>
+                    <option value="ad">Office of Inspector General</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Write Message:</label>
+                <textarea id="message" name="message" rows="5" cols="35"></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+
+        <p>For information on who to contact, you can read more on each agency's mission <a href="organization.html">here</a>.</p>
+    </main>
+    
+    <footer>
+        <div class="vertical_line"></div>
+        <p>Disclaimer: Department of Otherworldly Affairs is not an official website of the United States government. It is a worldbuilding and horror project. Any descriptions or claims otherwise exist purely for suspension of disbelief and should not be taken as any form of impersonation.</p>
+        <div class="footer_links">
+            <a href="home.html">Home</a>&nbsp;&verbar;
+            <a href="about.html">About</a>&nbsp;&verbar;
+            <a href="organization.html">Organization</a>&nbsp;&verbar;
+            <a href="history.html">History</a>&nbsp;&verbar;
+            <a href="newsroom.html">Newsroom</a>&nbsp;&verbar;
+            <a href="library.html">Library</a>&nbsp;&verbar;
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer_socials">
+            <a href="https://www.youtube.com/@the_skorlling"><img src="images/logo-youtube.svg" alt="Youtube"></a>
+            <a href="mailto:wryanangus@gmail.com"><img src="images/mail.svg" alt="Mail"></a>
+            <a href="https://www.instagram.com/skorlling/"><img src="images/logo-instagram.svg" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
