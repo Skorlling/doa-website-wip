@@ -31,16 +31,6 @@ header a:hover {
     color: gold;
 }
 
-header img {
-    max-width: 7%;
-    height: auto;
-    display: none;
-}
-
-header img:hover {
-    filter: sepia(100%) saturate(400%);
-}
-
 nav {
     padding: 1%;
     margin-bottom: 1%;
@@ -63,6 +53,10 @@ nav a {
 
 nav a:hover {
     color: gold;
+}
+
+.sidebar-extra {
+    display: none;
 }
 
 main {
@@ -103,6 +97,11 @@ aside {
     height: auto;
     padding: 5%;
     display: inline-block;
+}
+
+.grid {
+    display: inline-block;
+    text-align: center;
 }
 
 form {
@@ -198,10 +197,6 @@ footer img:hover {
         grid-template-columns: auto auto;
     }
 
-    .gallery {
-        width: 50%; float: left;
-    }
-
     .perma-2-column-grid {
         display: grid;
         grid-template-columns: auto auto;
@@ -223,10 +218,6 @@ footer img:hover {
     header h1 {
         padding: 0%;
     }
-
-    header img {
-        display: inline-block;
-    }
     
     nav {
         width: 150px;
@@ -238,6 +229,13 @@ footer img:hover {
         margin: 0;
         text-align: left;
     }
+
+    .sidebar-extra {
+        display: block;
+        padding: 1em;
+        font-size: 0.9em;
+        color: white;
+    }
     
     main {
         margin-left: 225px;
@@ -246,16 +244,6 @@ footer img:hover {
 
     aside {
         grid-column: 1 / span 3;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-
-    .gallery {
-        width: 30%;
-        float: left;
     }
 
     form {
@@ -270,7 +258,8 @@ footer img:hover {
     }
     
     footer {
-        margin-left: 225px;
+        margin-left: 150px;
         padding: 5%;
+        max-width: calc(100% - 150px);
     }
 }
